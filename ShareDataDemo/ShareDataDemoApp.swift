@@ -10,6 +10,7 @@ import SwiftUI
 
 @main
 struct ShareDataDemoApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
